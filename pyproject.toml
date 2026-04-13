@@ -1,0 +1,13 @@
+[project]
+name = "hass-sky-lite-evolve"
+version = "1.0.0"
+description = "Home Assistant integration for the BlissLights Sky Lite Evolve star projector. Both cloud and local control are supported."
+license = {text = "MIT"}
+requires-python = ">=3.14.2"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["custom_components/sky_lite_evolve"]

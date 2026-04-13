@@ -1,0 +1,17 @@
+{
+  "domain": "sky_lite_evolve",
+  "name": "BlissLights Sky Lite Evolve",
+  "version": "1.0.0",
+  "codeowners": [
+    "@kevbo"
+  ],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/kevbo/hass-sky-lite-evolve",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/kevbo/hass-sky-lite-evolve/issues",
+  "requirements": [
+    "tinytuya>=1.15.1"
+  ]
+}

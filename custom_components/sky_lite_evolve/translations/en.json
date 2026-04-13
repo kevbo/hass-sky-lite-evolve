@@ -1,0 +1,65 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connection Type",
+        "description": "Choose how to connect to your Sky Lite Evolve projector.",
+        "data": {
+          "connection_type": "Connection type"
+        }
+      },
+      "cloud": {
+        "title": "Tuya Cloud Credentials",
+        "description": "Enter your Tuya IoT Cloud project credentials.",
+        "data": {
+          "access_key": "Access Key",
+          "secret_key": "Secret Key",
+          "device_id": "Device ID",
+          "region": "Region"
+        }
+      },
+      "local": {
+        "title": "Local Connection",
+        "description": "Enter your Tuya cloud credentials and device IP. The local key will be fetched automatically. Cloud credentials are not stored.\n\nTo find the device IP, check your router's connected devices — the Evolve may appear as 'lwip0'. The Tuya Smart app shows the MAC address under Device > Edit > Device Information.\n\nTip: Set a static IP / DHCP reservation for the device in your router so the IP doesn't change.",
+        "data": {
+          "access_key": "Access Key",
+          "secret_key": "Secret Key",
+          "device_id": "Device ID",
+          "region": "Region",
+          "ip_address": "Device LAN IP (e.g. 192.168.1.x — check your router)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the projector. Please check your credentials.",
+      "invalid_auth": "Invalid authentication credentials.",
+      "unknown": "An unexpected error occurred."
+    },
+    "abort": {
+      "already_configured": "This device is already configured."
+    }
+  },
+  "entity": {
+    "light": {
+      "nebula": {
+        "name": "Nebula"
+      }
+    },
+    "switch": {
+      "laser": {
+        "name": "Laser"
+      },
+      "motor": {
+        "name": "Nebula motor"
+      }
+    },
+    "number": {
+      "laser_brightness": {
+        "name": "Laser brightness"
+      },
+      "rotation_speed": {
+        "name": "Nebula motor speed"
+      }
+    }
+  }
+}
